@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@rouf-dev/pantheon-ui':
-        specifier: ^1.0.5
-        version: 1.0.5(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: ^1.0.6
+        version: 1.0.6(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -730,8 +730,8 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@rouf-dev/pantheon-ui@1.0.5':
-    resolution: {integrity: sha512-Xjpe/6fGLVpi85bm/iSifqswivhK3RbB579j1Eqg3FiGu1Olyi09p849wXAIYU2QED/FTfoOSs/DfzqqjxrZZw==}
+  '@rouf-dev/pantheon-ui@1.0.6':
+    resolution: {integrity: sha512-kTFszhrZf0q7RKFIxThcuZfGIMZsgBpwdmJnwMSTnCFyH0fPc64vby6N8QXubIWWzMhHYRAAzQqR2Pf5RhANFA==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -3357,7 +3357,7 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@rouf-dev/pantheon-ui@1.0.5(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@rouf-dev/pantheon-ui@1.0.6(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@radix-ui/react-dialog': 1.1.15(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@radix-ui/react-select': 2.2.6(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)

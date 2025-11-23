@@ -11,5 +11,5 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
   const { slug } = await params
   const { frontmatter, content } = getDocBySlug(slug, 'docs')
 
-  return <DocContent frontmatter={frontmatter} content={content} />
+  return <DocContent frontmatter={frontmatter as { title: string; description?: string }} content={content} />
 }

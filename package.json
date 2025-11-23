@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@rouf-dev/pantheon-ui": "^1.0.5",
+    "@rouf-dev/pantheon-ui": "^1.0.6",
     "gray-matter": "^4.0.3",
     "next": "16.0.3",
     "next-mdx-remote": "^4.4.1",
