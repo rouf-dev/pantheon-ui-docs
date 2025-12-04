@@ -2,11 +2,11 @@ import { ComponentPreview } from "@/components/docs/component-preview";
 import { CodeBlock } from "@/components/docs/code-block";
 import {
   Breadcrumb,
-  BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbPage as BreadcrumbPageComponent,
   BreadcrumbSeparator,
+  BreadcrumbEllipsis,
 } from "@/components/ui";
 
 export default function BreadcrumbPage() {
@@ -29,7 +29,6 @@ export default function BreadcrumbPage() {
         <CodeBlock
           code={`import {
   Breadcrumb,
-  BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbPage,
@@ -37,19 +36,17 @@ export default function BreadcrumbPage() {
 } from "@rouf-dev/pantheon-ui";
 
 <Breadcrumb>
-  <BreadcrumbList>
-    <BreadcrumbItem>
-      <BreadcrumbLink href="/">Home</BreadcrumbLink>
-    </BreadcrumbItem>
-    <BreadcrumbSeparator />
-    <BreadcrumbItem>
-      <BreadcrumbLink href="/docs">Docs</BreadcrumbLink>
-    </BreadcrumbItem>
-    <BreadcrumbSeparator />
-    <BreadcrumbItem>
-      <BreadcrumbPageComponent>Breadcrumb</BreadcrumbPageComponent>
-    </BreadcrumbItem>
-  </BreadcrumbList>
+  <BreadcrumbItem>
+    <BreadcrumbLink href="/">Home</BreadcrumbLink>
+  </BreadcrumbItem>
+  <BreadcrumbSeparator />
+  <BreadcrumbItem>
+    <BreadcrumbLink href="/docs">Docs</BreadcrumbLink>
+  </BreadcrumbItem>
+  <BreadcrumbSeparator />
+  <BreadcrumbItem>
+    <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+  </BreadcrumbItem>
 </Breadcrumb>`}
           language="tsx"
         />
@@ -63,35 +60,31 @@ export default function BreadcrumbPage() {
             <h3 className="text-xl font-semibold mb-3">Default</h3>
             <ComponentPreview
               code={`<Breadcrumb>
-  <BreadcrumbList>
-    <BreadcrumbItem>
-      <BreadcrumbLink href="/">Home</BreadcrumbLink>
-    </BreadcrumbItem>
-    <BreadcrumbSeparator />
-    <BreadcrumbItem>
-      <BreadcrumbLink href="/docs">Documentation</BreadcrumbLink>
-    </BreadcrumbItem>
-    <BreadcrumbSeparator />
-    <BreadcrumbItem>
-      <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
-    </BreadcrumbItem>
-  </BreadcrumbList>
+  <BreadcrumbItem>
+    <BreadcrumbLink href="/">Home</BreadcrumbLink>
+  </BreadcrumbItem>
+  <BreadcrumbSeparator />
+  <BreadcrumbItem>
+    <BreadcrumbLink href="/docs">Documentation</BreadcrumbLink>
+  </BreadcrumbItem>
+  <BreadcrumbSeparator />
+  <BreadcrumbItem>
+    <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+  </BreadcrumbItem>
 </Breadcrumb>`}
             >
               <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/docs">Documentation</BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPageComponent>Breadcrumb</BreadcrumbPageComponent>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/docs">Documentation</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPageComponent>Breadcrumb</BreadcrumbPageComponent>
+                </BreadcrumbItem>
               </Breadcrumb>
             </ComponentPreview>
           </div>

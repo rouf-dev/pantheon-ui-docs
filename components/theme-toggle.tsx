@@ -4,15 +4,15 @@ import { useTheme } from "@rouf-dev/pantheon-ui";
 import { Button } from "@/components/ui";
 
 export function ThemeToggle() {
-  const { appearance, setAppearance } = useTheme();
+  const { resolvedTheme, setMode } = useTheme();
 
   const toggleTheme = () => {
-    setAppearance(appearance === "dark" ? "light" : "dark");
+    setMode(resolvedTheme === "dark" ? "light" : "dark");
   };
 
   return (
     <Button variant="ghost" size="icon" onClick={toggleTheme}>
-      {appearance === "dark" ? "🌞" : "🌙"}
+      {resolvedTheme === "dark" ? "🌞" : "🌙"}
     </Button>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { ComponentPreview } from "@/components/docs/component-preview";
 import { CodeBlock } from "@/components/docs/code-block";
 import { Button } from "@/components/ui";
